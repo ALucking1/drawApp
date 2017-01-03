@@ -9,7 +9,7 @@ This array is converted into a string, sent via the WebSocket, and then converte
 
 The second user will go to the guessing page and see the drawing the first user has submitted. The word is also sent via the WebSocket so that once the second user guesses the drawing correctly, they see a success message. 
 
-![Alt text](http://full/path/to/img.jpg "Optional title")
+![screenshottwo](https://cloud.githubusercontent.com/assets/17406621/21614542/c129c33e-d1d1-11e6-808a-f4c91c47bc8b.jpg)
 
 ## Analysis
 My team and I decided to go all out for our final project and use a new language (Swift), a new environment (XCode) and a new web technology (WebSockets) that none of us had used before. With just ten days to build the app from start to finish, using the user stories outlined below, it was a pretty difficult challenge. We made big leaps at the beginning, with a fully-outlined idea on day one and an MVP, a simple Swift app that allowed a user to draw on the screen with their finger, by day three. We hit some struggles once we tried to implement WebSockets, not having anticipated how tricky it would be to send drawing coordinates using a real-time technology. Despite the struggles, we not only achieved the fundamentals of the app but managed to implement a number of other features including a timer, colour-picker and guessing functionality.
