@@ -9,7 +9,7 @@ Once the first user opens the drawing page, they are presented with a word to dr
 
 This array is converted into a string, sent via the WebSocket connection, to the server, and then back through the WebSocket connection where it is converted back into an array of coordinates before being output onto the guessing page to any other user with the app open on their device. 
 
-The second user will go to the guessing page and see the drawing the first user has submitted. The word is also sent via the WebSocket so that once the second user guesses the drawing correctly, they see a success message. 
+The second user will go to the guessing page and see the drawing the first user has submitted. The word that has been drawn is also sent via the WebSocket connection so that once the second user guesses the drawing correctly the app confirms a match and they see a success message. 
 
 ![screenshottwo](https://cloud.githubusercontent.com/assets/17406621/21614542/c129c33e-d1d1-11e6-808a-f4c91c47bc8b.jpg)
 
