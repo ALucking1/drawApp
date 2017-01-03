@@ -3,9 +3,11 @@
 Drawsome is a multi-player drawing app that allows friends to draw pictures and send them to one another to guess. It is written in Swift 3 (XCode8) using WebSockets.
 
 ## How it works
-When a user launches the app, they are presented with two tabs: a drawing page and a guessing page. Once the first user opens the drawing page, they are presented with a word to draw as well as a timer, giving them 20 seconds to complete their drawing. As the user is drawing on the screen using their finger, the coordinates of the drawing are being stored in an array. 
+When a user launches the app, they are presented with two tabs: a drawing page and a guessing page. 
 
-This array is converted into a string, sent via the WebSocket, and then converted back into an array of coordinates before being output onto the guessing page to any other user with the app open on their device. 
+Once the first user opens the drawing page, they are presented with a word to draw as well as a timer, giving them 20 seconds to complete their drawing. As the user is drawing on the screen using their finger, the coordinates of the drawing are being stored in an array. 
+
+This array is converted into a string, sent via the WebSocket connection, to the server, and then back through the WebSocket connection where it is converted back into an array of coordinates before being output onto the guessing page to any other user with the app open on their device. 
 
 The second user will go to the guessing page and see the drawing the first user has submitted. The word is also sent via the WebSocket so that once the second user guesses the drawing correctly, they see a success message. 
 
